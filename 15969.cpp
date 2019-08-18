@@ -1,13 +1,12 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    int a; scanf("%d", &a);
+    int a;
+    cin >> a;
     int b[a+1];
     
-    for(int i=0; i<a; i++) 
-    {
-        scanf("%d", &b[i]);
-    }
+    for(int i=0; i<a; i++) cin >> b[i];
     
     b[a]=b[0]; b[a+1]=b[0];
     
@@ -22,5 +21,5 @@ int main() {
         }
     }
     
-    printf("%d\n", b[a+1]-b[a]);
+    cout << b[a+1]-b[a];
 }
