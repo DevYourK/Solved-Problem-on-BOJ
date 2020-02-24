@@ -1,5 +1,6 @@
 
 *.exe
+script.cpp
 .gitattributes
 .vscode/tasks.json
 .vscode/c_cpp_properties.json
