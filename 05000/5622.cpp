@@ -11,7 +11,7 @@ int main() {
 		
 		if(ascii<16) {
 			if(ascii%3>0) {
-				ascii=(ascii-(ascii%3))/3;
+				ascii=ascii/3;
 			} else {
 				ascii=(ascii/3)-1;
 			}
