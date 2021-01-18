@@ -2,12 +2,17 @@
 using namespace std;
 
 int main() {
-    int io[2], c=0, d=4;
+    int count=0, max=0, in, out;
 
-    while(d>0) {
-        cin >> io[0] >> io[1];
-        if(c-io[0]+io[1] > c) c+=-io[0]+io[1];
-        d--;
+    for(int i=0; i<4; i++) {
+        cin >> out >> in;
+        
+        count = count-out;
+        max = (count>max)?count:max;
+        
+        count = count+in;
+        max = (count>max)?count:max;
     }
-    cout << c;
+
+    cout << max;
 }
