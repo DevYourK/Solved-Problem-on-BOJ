@@ -8,5 +8,5 @@ Solved Problem on BOJ
 |언어|컴파일러|에디터|
 |:--:|:--:|:--:|
 |<img src="https://user-images.githubusercontent.com/20770834/81207760-074fd800-9009-11ea-865c-67a093c030eb.png" width="12px">|G++ 8.1.0|Visual Studio Code|
-|<img src="https://user-images.githubusercontent.com/20770834/81209415-78908a80-900b-11ea-9c91-97a9ea9f6cc9.png" width="12px">|Python 3.8.2|Visual Studio Code|
+|<img src="https://user-images.githubusercontent.com/20770834/81209415-78908a80-900b-11ea-9c91-97a9ea9f6cc9.png" width="12px">|Python 3.9.5|Visual Studio Code|
 <!--|<img src="https://user-images.githubusercontent.com/20770834/81209684-d1602300-900b-11ea-8c8b-01d0cc143c02.png" width="12px"><br/><img src="https://user-images.githubusercontent.com/20770834/81209422-7af2e480-900b-11ea-94a8-aae36523259d.png" width="12px">|Java 1.8.241<br/>Kotlin 1.3.72|IntelliJ IDEA<br/> Community|-->
