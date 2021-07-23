@@ -3,34 +3,31 @@
 #include <algorithm>
 using namespace std;
 
-vector <int>vec;
-vector <int>dp;
-int k;
-
-int st(int a, int b) {
-    return a > b;
-}
-
 int main() {
+    /*
+    ios::sync_with_stdio(0);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    */
+
     int n;
     cin >> n;
 
+    vector <int>vec;
+
     for(int i=0; i<n; i++) {
-        int num;
-        cin >> num;
-        vec.push_back(num);
+        int M;
+        cin >> M;
+
+        if(!vec.size() or vec[vec.size()-1] < M) {
+            vec.push_back(M);
+        } else {
+            auto p = lower_bound(vec.begin(), vec.end(), M);
+            *p = M;
+        }
     }
 
-    for(int i=0; i<vec.size(); i++) {
-        int v=0;
-        for(int j=0; j<=i; j++) {
-            if(vec[j]<vec[i] && v<dp[j]) {
-                v=dp[j];
-            }
-        }
-        dp.push_back(v+1);
-    }
-    
-    sort(dp.begin(), dp.end(), st);
-    cout << dp[0];
+    cout << vec.size();
+
+    return 0;
 }
