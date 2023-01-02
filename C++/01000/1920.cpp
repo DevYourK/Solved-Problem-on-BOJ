@@ -4,14 +4,14 @@
 using namespace std;
 
 int N;
-vector <int>vec;
+vector <long>vec;
 
-int sol(int X) {
-    int F=0;
-    int L=N;
+long sol(long X) {
+    long F=0;
+    long L=N-1;
 
     while(L-F>=0) {
-        int M=(F+L)/2;
+        long M=(F+L)/2;
         if(vec[M] == X) {
             cout << 1 << "\n";
             return 0;
@@ -28,12 +28,14 @@ int sol(int X) {
 }
 
 int main() {
-    cin.tie(nullptr);
     ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
     cin >> N;
     
     for(int i=0; i<N; i++) {
-        int X;
+        long X;
         cin >> X;
         vec.push_back(X);
     }
@@ -44,7 +46,7 @@ int main() {
     sort(vec.begin(), vec.end());
 
     for(int i=0; i<M; i++) {
-        int X;
+        long X;
         cin >> X;
         
         sol(X);
