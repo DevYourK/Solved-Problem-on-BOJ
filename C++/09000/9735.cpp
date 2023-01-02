@@ -48,8 +48,8 @@ int main() {
             // 정수 해를 찾고 나머지는 근의 공식으로 해결
             int num = 0;
             for(long long i=-abs(vec[3]); i<=abs(vec[3]); i++) {
-                long long a = vec[0] * pow(i, 3);
-                long long b = vec[1] * pow(i, 2);
+                long long a = vec[0] * i * i * i;
+                long long b = vec[1] * i * i;
                 long long c = vec[2] * i;
 
                 if(a + b + c + vec[3] == 0) {
