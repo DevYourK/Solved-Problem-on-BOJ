@@ -4,13 +4,11 @@
 using namespace std;
 
 bool chk[8] = {0, };
+vector<vector<int>> list;
 
 void func(vector<int> vec, vector<int> arr, int i, int M) {
     if(i==M) {
-        for(int j=0; j<arr.size(); j++) {
-            cout << arr[j] << " ";
-        }
-        cout << "\n";
+        list.push_back(arr);
 
         return;
     }
@@ -40,6 +38,15 @@ int main() {
     }
 
     sort(vec.begin(), vec.end());
-
     func(vec, arr, 0, M);
+
+    sort(list.begin(), list.end());
+    list.erase(unique(list.begin(), list.end()), list.end());
+
+    for(int i=0; i<list.size(); i++) {
+        for(int j=0; j<list[i].size(); j++) {
+            cout << list[i][j] << " ";
+        }
+        cout << "\n";
+    }
 }

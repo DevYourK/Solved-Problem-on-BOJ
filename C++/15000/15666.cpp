@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-bool chk[8] = {0, };
+int minimum = 0;
 
 void func(vector<int> vec, vector<int> arr, int i, int M) {
     if(i==M) {
@@ -16,19 +16,20 @@ void func(vector<int> vec, vector<int> arr, int i, int M) {
     }
 
     for(int j=0; j<vec.size(); j++) {
-        if(chk[j]) continue;
-
+        if(!arr.empty()) {
+            if(arr.back() > vec[j]) continue;
+        }
         arr.push_back(vec[j]);
-        chk[j] = true;
-        
         func(vec, arr, i+1, M);
-
         arr.pop_back();
-        chk[j] = false;
     }
 }
 
 int main() {
+    ios::sync_with_stdio(0);
+    cin.tie();
+    cout.tie();
+    
     int N, M;
     cin >> N >> M;
 
@@ -38,8 +39,8 @@ int main() {
     for(int i=0; i<N; i++) {
         cin >> vec[i];
     }
-
+    
     sort(vec.begin(), vec.end());
-
+    vec.erase(unique(vec.begin(), vec.end()), vec.end());
     func(vec, arr, 0, M);
 }
