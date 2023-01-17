@@ -1,11 +1,9 @@
 Solved Problem on BOJ
 =======================================
 
-백준 온라인 저지에서 제가 풀어낸 문제들을 정리하고 풀이를 작성해 관리하는 레포지터리입니다.<br/>
+BOJ Problem Source Archive
 
-컴파일러/사용언어 정보
-
-|언어|컴파일러|에디터|
+|lang|compiler|editor|
 |:--:|:--:|:--:|
 |<img src="https://user-images.githubusercontent.com/20770834/81207760-074fd800-9009-11ea-865c-67a093c030eb.png" width="12px">|G++ 12.2.0|Visual Studio Code|
 |<img src="https://user-images.githubusercontent.com/20770834/81209415-78908a80-900b-11ea-9c91-97a9ea9f6cc9.png" width="12px">|Python 3.11.1|Visual Studio Code|
