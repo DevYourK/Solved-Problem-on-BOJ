@@ -1,6 +1,5 @@
-Solved Problem on BOJ
+boj-archive
 =======================================
-
 BOJ Problem Source Archive
 
 |lang|compiler|editor|
